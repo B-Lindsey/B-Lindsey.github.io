@@ -1,0 +1,16 @@
+# Sites published on https://b-lindsey.github.io/
+#
+# To add a site:
+# 1. Create sites/<id>/ (see README.md).
+# 2. Add a [[site]] entry below. The public URL is /<id>/.
+# 3. Run ./scripts/build.sh and commit the source plus the rebuilt docs/.
+#
+# builder = "hugo"   Hugo project in sites/<id>/ (needs Hugo extended 0.165.0)
+# builder = "static" Copy sites/<id>/ to docs/<id>/ as-is
+
+[[site]]
+id = "crossfire-pro"
+builder = "hugo"
+kicker = "Shop notes"
+title = "CrossFire PRO Procedures & Reference"
+summary = "Procedures, FireControl fixes, cut charts, and test-cut notes for my Langmuir CrossFire PRO and Razorweld CUT45 CNC."

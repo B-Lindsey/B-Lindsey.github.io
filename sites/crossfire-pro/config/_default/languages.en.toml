@@ -1,0 +1,16 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "CrossFire PRO Procedures & Reference"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Bernie's CrossFire PRO + Razorcut 45 notes: procedures, cut charts, and test-cut program. Personal notes, unlisted. Not affiliated with Langmuir Systems."
+
+[params.author]
+  name = "Bernie Lindsey"
+  headline = "CrossFire PRO + Razorweld Razorcut 45 procedures and test cuts"

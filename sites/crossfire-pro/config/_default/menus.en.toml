@@ -1,0 +1,28 @@
+[[main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+[[main]]
+  name = "Procedures"
+  pageRef = "/procedures/"
+  weight = 20
+[[main]]
+  name = "Testing"
+  pageRef = "/testing/"
+  weight = 30
+[[main]]
+  name = "FireControl"
+  pageRef = "/firecontrol/"
+  weight = 40
+[[main]]
+  name = "Charts"
+  pageRef = "/charts/"
+  weight = 50
+[[main]]
+  name = "Sources"
+  pageRef = "/sources/"
+  weight = 60
+[[main]]
+  name = "About"
+  pageRef = "/about/"
+  weight = 70

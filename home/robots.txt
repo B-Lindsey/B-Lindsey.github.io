@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /crossfire-pro/
+
+Sitemap: https://b-lindsey.github.io/sitemap.xml
