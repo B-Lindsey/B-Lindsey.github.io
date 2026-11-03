@@ -1,0 +1,18 @@
+{{/* Renders a CSV from assets/ as a table. Usage: {{< csv-table src="data/test-cut-log.csv" >}} */}}
+{{- $src := .Get "src" -}}
+{{- with resources.Get $src -}}
+  {{- $rows := . | transform.Unmarshal (dict "delimiter" ",") -}}
+  <div class="csv-table-wrap">
+  <table class="csv-table">
+    <thead><tr>{{ range index $rows 0 }}<th>{{ replace . "_" " " }}</th>{{ end }}</tr></thead>
+    <tbody>
+    {{- range after 1 $rows }}
+      <tr>{{ range . }}<td>{{ . }}</td>{{ end }}</tr>
+    {{- end }}
+    </tbody>
+  </table>
+  </div>
+  <p class="csv-count">{{ sub (len $rows) 1 }} rows.</p>
+{{- else -}}
+  {{ errorf "csv-table: %s not found in assets/" $src }}
+{{- end -}}

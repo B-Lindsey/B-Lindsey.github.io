@@ -1,0 +1,91 @@
+# noindex: unlisted site (shared by link only). Keep with layouts/robots.txt Disallow.
+robots = "noindex, nofollow"
+copyright = "© 2026 Bernie Lindsey. Personal notes, unlisted. Not affiliated with Langmuir Systems, Razorweld, or Jasic. Settings are starting points, not proven; follow the manufacturers' manuals and safety instructions first. [About this site](/about/)"
+colorScheme = "blowfish"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+enableSearch = true
+enableCodeCopy = true
+replyByEmail = false
+disableImageOptimization = false
+disableTextInHeader = false
+backgroundCanvas = false
+smartTOC = false
+fingerprintAlgorithm = "sha512"
+giteaDefaultServer = ""
+forgejoDefaultServer = ""
+
+[header]
+  layout = "fixed"
+
+[footer]
+  showMenu = false
+  showCopyright = true
+  # Footer text is the top-level `copyright` above (the theme reads .Site.Params.copyright).
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "page"
+  showRecent = false
+  showMoreLink = false
+  cardView = false
+  layoutBackgroundBlur = false
+
+[article]
+  showDate = false
+  showViews = false
+  showLikes = false
+  showDateOnlyInArticle = false
+  showDateUpdated = false
+  showAuthor = false
+  showHero = false
+  heroStyle = "background"
+  layoutBackgroundBlur = true
+  layoutBackgroundHeaderSpace = true
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showEdit = false
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = false
+  showTableOfContents = true
+  showRelatedContent = false
+  showTaxonomies = true
+  showAuthorsBadges = false
+  showWordCount = false
+  showZenMode = false
+  seriesOpened = true
+  sharingLinks = []
+
+[list]
+  showHero = false
+  heroStyle = "background"
+  layoutBackgroundBlur = true
+  layoutBackgroundHeaderSpace = true
+  showBreadcrumbs = true
+  showSummary = true
+  showViews = false
+  showLikes = false
+  showTableOfContents = false
+  showCards = false
+  orderByWeight = true
+  groupByYear = false
+  cardView = false
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+[taxonomy]
+  showTermCount = true
+  showHero = false
+  cardView = false
+
+[term]
+  showHero = false
+  cardView = true
+  groupByYear = false

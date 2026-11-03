@@ -1,0 +1,29 @@
+date,material,thickness_in,amps,psi,feed_ipm,pierce_height_in,pierce_delay_s,cut_height_in,thc_on,thc_voltage,kerf_set_in,kerf_measured_in,consumables_pierce_count,result_dross,result_bevel,notes,source_setting,session_id
+,mild_steel,0.0598,25,75,91,0.15,0.5,0.08,yes,0,0,,,,,PLANNED L1 SMART; liveV=,chart opt 114 -20%; Langmuir example 0.5s (chart has none at 25A),S01-MS-16GA
+,mild_steel,0.0598,25,75,103,0.15,0.5,0.08,yes,0,0,,,,,PLANNED L2 SMART; liveV=,chart opt 114 -10%; Langmuir example 0.5s (chart has none at 25A),S01-MS-16GA
+,mild_steel,0.0598,25,75,114,0.15,0.5,0.08,yes,0,0,,,,,PLANNED L3 SMART; liveV=,chart opt 114 0%; Langmuir example 0.5s (chart has none at 25A),S01-MS-16GA
+,mild_steel,0.0598,25,75,125,0.15,0.5,0.08,yes,0,0,,,,,PLANNED L4 SMART; liveV=,chart opt 114 +10%; Langmuir example 0.5s (chart has none at 25A),S01-MS-16GA
+,mild_steel,0.0598,25,75,137,0.15,0.5,0.08,yes,0,0,,,,,PLANNED L5 SMART; liveV=,chart opt 114 +20%; Langmuir example 0.5s (chart has none at 25A),S01-MS-16GA
+,mild_steel,0.0598,25,75,,,,0.060,no,,0,,,,,PLANNED H1 height-reference line; feeler-gauged 0.060 real gap; Z unplugged; no IHS; feed=provisional winner; record Live Volts in thc_voltage,Langmuir THC guide manual nominal; 0.060 gap,S01-MS-16GA
+,mild_steel,0.0598,25,75,,,,0.120,no,,0,,,,,PLANNED H2 optional second height line; feeler-gauged 0.120 real gap; Z unplugged; record Live Volts,my height-vs-volts check,S01-MS-16GA
+,mild_steel,0.0598,25,75,,0.15,0.5,0.08,yes,152,0,,,,,PLANNED T1 fixed chart voltage; feed=provisional winner; stand by pause; height~ bevel=,Razorweld chart (MO-Hacker t/847/29) arc V 152,S01-MS-16GA
+,mild_steel,0.0598,25,75,,0.15,0.5,0.08,yes,111,0,,,,,PLANNED T2 fixed 111V (T45m 16ga 30A row; 116V at 45A; amps differ from session 25A); feed=provisional winner; stand by pause; height~ bevel=,T45m-format chart reportedly from Jasic (FSFab t/45011) 16ga MS 30A row 111V,S01-MS-16GA
+,mild_steel,0.0598,25,75,,0.15,0.25,0.08,yes,,0,,,,,PLANNED P1 shorter delay; feed=winner; thc=3-way choice,delay test 0.25s; chart delay steps,S01-MS-16GA
+,mild_steel,0.0598,25,75,,0.15,0,0.08,yes,,0,,,,,PLANNED P2 no delay (chart shows none at 25A); feed=winner; thc=3-way choice,delay test 0s; chart delay steps,S01-MS-16GA
+,mild_steel,0.0598,25,75,,0.15,,0.08,yes,,,,,,,PLANNED V1 verify; kerf_set=measured; record hole and rectangle error,measured kerf,S01-MS-16GA
+,mild_steel,0.1875,40,75,50,0.15,0.75,0.08,yes,0,0,,,,,PLANNED L1 SMART; liveV=,chart opt 63 -20%; chart delay 0.75s,S04-MS-3-16
+,mild_steel,0.1875,40,75,57,0.15,0.75,0.08,yes,0,0,,,,,PLANNED L2 SMART; liveV=,chart opt 63 -10%; chart delay 0.75s,S04-MS-3-16
+,mild_steel,0.1875,40,75,63,0.15,0.75,0.08,yes,0,0,,,,,PLANNED L3 SMART; liveV=,chart opt 63 0%; chart delay 0.75s,S04-MS-3-16
+,mild_steel,0.1875,40,75,69,0.15,0.75,0.08,yes,0,0,,,,,PLANNED L4 SMART; liveV=,chart opt 63 +10%; chart delay 0.75s,S04-MS-3-16
+,mild_steel,0.1875,40,75,76,0.15,0.75,0.08,yes,0,0,,,,,PLANNED L5 SMART; liveV=,chart opt 63 +20%; chart delay 0.75s,S04-MS-3-16
+,mild_steel,0.1875,40,75,,,,0.060,no,,0,,,,,PLANNED H1 height-reference line; feeler-gauged 0.060 real gap; Z unplugged; no IHS; feed=provisional winner; record Live Volts in thc_voltage,Langmuir THC guide manual nominal; 0.060 gap,S04-MS-3-16
+,mild_steel,0.1875,40,75,,,,0.120,no,,0,,,,,PLANNED H2 optional second height line; feeler-gauged 0.120 real gap; Z unplugged; record Live Volts,my height-vs-volts check,S04-MS-3-16
+,mild_steel,0.1875,40,75,,0.15,0.75,0.08,yes,147,0,,,,,PLANNED T1 fixed chart voltage; feed=provisional winner; stand by pause; height~ bevel=,Razorweld chart (MO-Hacker t/847/29) arc V 147,S04-MS-3-16
+,mild_steel,0.1875,40,75,,0.15,0.75,0.08,yes,118,0,,,,,PLANNED T2 fixed 118V (T45m 3/16 45A row; amps differ from session 40A); feed=provisional winner; stand by pause; height~ bevel=,T45m-format chart reportedly from Jasic (FSFab t/45011) 3/16 MS 45A row 118V,S04-MS-3-16
+,mild_steel,0.1875,40,75,,0.15,0.50,0.08,yes,,0,,,,,PLANNED P1 shorter delay; feed=winner; thc=3-way choice,delay test 0.50s; chart delay steps,S04-MS-3-16
+,mild_steel,0.1875,40,75,,0.15,1.00,0.08,yes,,0,,,,,PLANNED P2 longer delay; feed=winner; thc=3-way choice,delay test 1.00s; chart delay steps,S04-MS-3-16
+,mild_steel,0.1875,40,75,,0.15,,0.08,yes,,,,,,,PLANNED V1 verify; kerf_set=measured; record hole and rectangle error,measured kerf,S04-MS-3-16
+,mild_steel,0.1875,40,75,63,0.15,0.75,0.08,yes,0,0,,,,,PLANNED J1 Razorweld baseline SMART; use S04 winner feed/delay if known; liveV= gap=,Razorweld chart (MO-Hacker t/847/29) 3/16 MS 40A opt 63,S04B-MS-3-16
+,mild_steel,0.1875,45,75,85,0.15,0.75,0.08,yes,0,0,,,,,PLANNED J2 T45m 45A; delay 0.5 book + 0.25 margin for FireControl start timing (t/12941/2); liveV= gap=,T45m-format chart reportedly from Jasic (FSFab t/45011) 3/16 MS 45A 85ipm,S04B-MS-3-16
+,mild_steel,0.1875,45,75,85,0.15,0.5,0.08,yes,0,0,,,,,PLANNED J3 T45m 45A book delay; liveV=,T45m-format chart reportedly from Jasic (FSFab t/45011) 3/16 MS 45A 85ipm 0.5s,S04B-MS-3-16
+,mild_steel,0.1875,45,75,85,0.15,,0.08,yes,118,0,,,,,PLANNED J4 T45m 45A fixed 118V; delay=better of J2/J3; stand by pause; gap=,T45m-format chart reportedly from Jasic (FSFab t/45011) 3/16 MS 45A 118V,S04B-MS-3-16

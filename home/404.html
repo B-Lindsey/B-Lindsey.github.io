@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Bernie Lindsey</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f3efe6">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/home.css">
+  <script>
+    (function () {
+      var path = location.pathname;
+      var rel = path.replace(/^\//, "");
+      var legacyDir = /^(?:procedures|firecontrol|testing|charts|sources|about|tags|series|images|downloads|css|js|lib)(\/|$)/;
+      var legacyFile = /^(?:favicon\.ico|favicon-16x16\.png|favicon-32x32\.png|apple-touch-icon\.png|android-chrome-192x192\.png|android-chrome-512x512\.png|site\.webmanifest|index\.xml|index\.json)$/;
+      if (legacyDir.test(rel) || legacyFile.test(rel)) {
+        location.replace("/crossfire-pro" + path + location.search + location.hash);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <main id="content">
+    <p class="name">Bernie Lindsey</p>
+    <h1>Page not found</h1>
+    <p class="lede">That address isn't on this site. Older CrossFire PRO pages now live under /crossfire-pro/.</p>
+    <p class="actions">
+      <a href="/">Home</a>
+      <a href="/crossfire-pro/">CrossFire PRO Procedures &amp; Reference</a>
+    </p>
+  </main>
+</body>
+</html>

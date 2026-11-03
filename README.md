@@ -1,44 +1,68 @@
-# CrossFire PRO Procedures & Reference
+# Bernie Lindsey
 
-Step-by-step procedures and reference notes for running a **Langmuir Systems CrossFire PRO** CNC plasma table. I wrote them for my own shop and turned them into a small website.
+Personal project sites published at <https://b-lindsey.github.io/>.
 
-**Live site:** <https://b-lindsey.github.io/>
+The root of the site is a short home page. Each project is a subfolder. The first one is [CrossFire PRO Procedures & Reference](https://b-lindsey.github.io/crossfire-pro/).
 
-## Purpose
+## Layout
 
-The Langmuir forum has years of good advice, but it's spread across thousands of threads, and much of it applies to a different CrossFire model or plasma cutter. This site pulls the parts that apply to my setup into clear procedures that cite their sources. It's mainly for my own use, and other CrossFire owners may find it useful too.
+```
+sites/registry.toml          home-page cards, in order
+sites/crossfire-pro/         Hugo source for the CrossFire site
+home/                        home page, 404 page, and stylesheet
+scripts/build.sh             rebuilds docs/
+scripts/legacy-redirects.txt old CrossFire URLs that redirect
+docs/                        what GitHub Pages serves
+  index.html                 home page
+  404.html
+  assets/home.css
+  crossfire-pro/             built CrossFire site
+  procedures/, firecontrol/, …   redirects into /crossfire-pro/
+```
 
-## My setup
+GitHub Pages serves this repository from the `master` branch, `/docs` folder. `docs/.nojekyll` keeps Jekyll from rewriting the built files. Nothing in the repository settings has to change for that to keep working.
 
-- Langmuir Systems CrossFire PRO with torch height control (THC), owned since August 2024
-- Razorweld CUT45 CNC plasma cutter, model JRWPC45LH, with the X45 machine torch
-- Ingersoll-Rand SS3L3 compressor, then an Ingersoll-Rand D18IN refrigerated dryer, then a final filter
-- Inkscape and Fusion for design, SheetCam for toolpaths and G-code, FireControl to run the table
-- Mostly mild steel, stainless, and aluminum, 3/16 in and thinner
+The CrossFire site stays out of search indexes: every page has `noindex`, and the root `robots.txt` disallows `/crossfire-pro/`. The home page itself does not.
 
-## What's on the site
+## Rebuild
 
-- **Procedures:** indexing parts longer than the table, THC setup and torch dives, grounding and electrical noise, air quality and consumables, cut settings, dross and bevel, pierce height and delay, kerf and hole accuracy, SheetCam setup, and gantry squaring and lost steps.
-- **FireControl:** common FireControl problems and fixes.
-- **Testing:** a test-cut program, a worksheet, and a log of my real settings and results.
-- **Charts and Sources:** cut charts, plus every source the pages cite, grouped by who published it.
+Install [Hugo extended v0.165.0](https://github.com/gohugoio/hugo/releases/tag/v0.165.0) (`hugo version` should say `v0.165.0` and `+extended`). That is the version the CrossFire site was built with. Blowfish v3.9.0 is a Hugo module (`sites/crossfire-pro/go.mod`), so Go is needed the first time Hugo downloads it.
 
-## How sources are weighted
+```bash
+./scripts/build.sh
+```
 
-1. Langmuir Systems documentation and staff
-2. Manufacturer manuals and cut charts, starting with my own JRWPC45LH manual
-3. Experienced forum members whose advice others have confirmed
-4. Everyone else
+Commit both the source and the rebuilt `docs/` folder. A pull request that changes a site without rebuilding `docs/` will fail the Build workflow, which rebuilds and checks that `docs/` matches.
 
-Where sources disagree, the page says so and explains which one I trust and why. On safety (grounding, electrical work, and fumes from galvanized or coated metal), the manufacturer's guidance always wins.
+Preview the CrossFire source on its own:
 
-## How this repository works
+```bash
+cd sites/crossfire-pro
+hugo server
+```
 
-- The site is built with [Hugo](https://gohugo.io/) and the [Blowfish](https://blowfish.page/) theme.
-- This repository holds only the **built site**, in the `docs/` folder. GitHub Pages serves it from the `master` branch, `/docs` folder. The `.nojekyll` file tells GitHub not to run Jekyll on it.
-- The Hugo source (Markdown content, config, and theme) is kept separately and isn't in this repository.
-- To update the site, rebuild it from the source and replace `docs/` through a pull request.
+## Add a site
 
-## Disclaimer
+1. Create `sites/<id>/`.
+   - Hugo: copy the shape of `sites/crossfire-pro/`. Set `baseURL` to `https://b-lindsey.github.io/<id>/`. Pin the theme the same way (Hugo module or a submodule) so the build does not depend on a theme copy that lives only on one machine.
+   - Already-built HTML: put the files in `sites/<id>/` and use `builder = "static"`. The folder is copied to `docs/<id>/` as-is (`README.md` in that folder is not published).
+2. Add a `[[site]]` entry at the bottom of `sites/registry.toml` (`id`, `builder`, `kicker`, `title`, `summary`). The card links to `/<id>/`.
+3. Run `./scripts/build.sh` and commit.
 
-This is a personal project. It isn't affiliated with or endorsed by Langmuir Systems, Razorweld, or Jasic. Plasma cutting involves high voltage, compressed air, heat, and fumes, so follow the manufacturers' manuals and safety instructions. Use these notes at your own risk.
+## Old CrossFire URLs
+
+Pages that used to live at the site root (`/procedures/…`, `/firecontrol/…`, `/testing/…`, `/charts/`, `/sources/`, `/about/`, plus tags and series) are small HTML redirects to the same path under `/crossfire-pro/`. The list is `scripts/legacy-redirects.txt`. GitHub Pages cannot send a real 301 while serving a folder, so these are browser redirects (`meta` refresh and `location.replace`).
+
+Opening an old asset URL directly (`/images/…`, `/css/…`, `/downloads/…`) hits the root 404 page, which sends the browser to `/crossfire-pro/…`. Links inside the rebuilt site already point at `/crossfire-pro/`.
+
+## CrossFire content
+
+Procedures, charts, and the test-cut log live in `sites/crossfire-pro/content/`. After a test session, update the log in both `assets/data/test-cut-log.csv` and `static/downloads/test-cut-log.csv`, set `lastmod` on any page you edit, then rebuild. Details are in `sites/crossfire-pro/DEPLOY.md`.
+
+Image and download paths in the Markdown go through the `relurl` shortcode (or a normal Markdown link) so they pick up the `/crossfire-pro/` base URL.
+
+## Actions deployment
+
+The Build workflow only checks the site. Publishing stays on the `master` `/docs` folder, which needs no settings change.
+
+To publish from Actions instead, switch Settings → Pages → Build and deployment → Source to **GitHub Actions**, and replace the workflow with one that uploads `docs/` (`actions/upload-pages-artifact` and `actions/deploy-pages`). Leave the source as it is unless you make that change.

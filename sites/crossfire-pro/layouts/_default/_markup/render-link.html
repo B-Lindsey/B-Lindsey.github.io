@@ -1,0 +1,51 @@
+{{/* Blowfish v3.9.0 render-link, plus a static-file fallback.
+     The theme resolves page and asset links, then leaves anything else
+     untouched. Files in static/ (images, downloads) never match, so a
+     Markdown link like [chart](/images/rw_chart.jpeg) stayed at the host
+     root. relURL adds the /crossfire-pro/ base. Links that already include
+     that base (relref output) are left alone.
+*/}}
+{{- $u := urls.Parse .Destination -}}
+{{- $href := $u.String -}}
+{{- if strings.HasPrefix $u.String "#" -}}
+  {{- $href = printf "%s#%s" .PageInner.RelPermalink $u.Fragment -}}
+{{- else if and $href (not $u.IsAbs) -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path -}}
+  {{- $basePath := strings.TrimSuffix "/" (urls.Parse site.BaseURL).Path -}}
+  {{- /* Shortcodes are still placeholders here. Leave them so relref can expand. */ -}}
+  {{- $placeholder := strings.Contains .Destination "HAHAHUGOSHORTCODE" -}}
+  {{- with or
+    ($.PageInner.GetPage $path)
+    ($.PageInner.Resources.Get $path)
+    (resources.Get $path)
+  -}}
+    {{- $href = .RelPermalink -}}
+    {{- with $u.RawQuery -}}
+      {{- $href = printf "%s?%s" $href . -}}
+    {{- end -}}
+    {{- with $u.Fragment -}}
+      {{- $href = printf "%s#%s" $href . -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $already := or (eq $path $basePath) (and $basePath (strings.HasPrefix $path (printf "%s/" $basePath))) -}}
+    {{- if and (not $already) (not $placeholder) -}}
+      {{- $href = relURL (strings.TrimPrefix "/" $path) -}}
+      {{- with $u.RawQuery -}}
+        {{- $href = printf "%s?%s" $href . -}}
+      {{- end -}}
+      {{- with $u.Fragment -}}
+        {{- $href = printf "%s#%s" $href . -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $forceNewTab := .Page.Params.externalLinkForceNewTab | default (.Page.Site.Params.article.externalLinkForceNewTab | default true) -}}
+{{- $isExternal := or (strings.HasPrefix .Destination "http:") (strings.HasPrefix .Destination "https:") -}}
+{{- $newTab := and $forceNewTab $isExternal -}}
+
+<a href="{{ $href }}" {{ with .Title }}title="{{ . }}"{{ end }}
+  {{- if $newTab }} target="_blank" rel="noreferrer"{{ end }}>
+  {{- .Text | safeHTML -}}
+</a>
+{{- /* Trim EOF */ -}}

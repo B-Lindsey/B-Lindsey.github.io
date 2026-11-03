@@ -1,0 +1,48 @@
+/* ---------- CrossFire PRO testing site ---------- */
+.last-updated { font-size: .9rem; opacity: .8; margin-top: 0; }
+
+/* Wide tables scroll sideways on phones instead of squashing */
+.prose table, .csv-table { display: block; overflow-x: auto; max-width: 100%; }
+.prose th, .prose td { white-space: normal; }
+.csv-table { font-size: .8rem; border-collapse: collapse; }
+.csv-table th, .csv-table td { border: 1px solid rgba(128,128,128,.4); padding: .25rem .4rem; vertical-align: top; }
+.csv-table th { position: sticky; top: 0; background: rgb(var(--color-neutral-100)); }
+.dark .csv-table th { background: rgb(var(--color-neutral-800)); }
+.chart-figure img { max-width: 100%; height: auto; border: 1px solid rgba(128,128,128,.4); border-radius: .3rem; }
+
+/* ---------- Print: clean tables on paper ---------- */
+@page { margin: 0.4in; }
+@media print {
+  html, body { background: #fff !important; color: #000 !important; }
+  header:not(#single_header), footer, nav, #single_header ol, #single_header .article-meta, #TableOfContents, .toc, #search-wrapper, #top-scroller,
+  .last-updated + .no-print, .no-print, [id^="appearance-switcher"], .article-pagination,
+  details#series, .series { display: none !important; }
+  [class*="max-w-"], .max-w-prose { max-width: none !important; }
+  .max-w-7xl { padding-left: 0 !important; padding-right: 0 !important; }
+  .toc, .toc-right, .toc-inside { display: none !important; }
+  body { font-size: 10pt; }
+  .prose, article, main { max-width: none !important; width: 100% !important; color: #000 !important; }
+  .prose a { color: #000 !important; text-decoration: none; }
+  .prose table, .csv-table { display: table !important; overflow: visible !important; width: 100% !important;
+    border-collapse: collapse; font-size: 8pt; table-layout: auto; margin: 4pt 0 !important; }
+  .prose th, .prose td, .csv-table th, .csv-table td { border: 1px solid #000 !important; padding: 3pt 4pt !important;
+    color: #000 !important; background: #fff !important; }
+  .prose td { height: 15pt; }
+  .print-wide hr { display: none !important; }
+  .prose thead { display: table-header-group; }
+  .prose tr, .csv-table tr { page-break-inside: avoid; break-inside: avoid; }
+  .prose h2 { break-after: avoid; }
+  .print-wide hr + h2 { break-before: page; margin-top: 0 !important; }
+  .print-wide h2 { margin: 6pt 0 !important; }
+  .print-wide p { margin: 4pt 0 !important; }
+}
+
+/* Test-cut log: wider than the text column, short cells on one line, notes wrap */
+@media screen {
+  .csv-table-wrap { width: min(1150px, calc(100vw - 3rem)); max-width: none; }
+  .csv-table-wrap .csv-table { max-height: 80vh; }
+}
+@media screen and (min-width: 1024px) { .csv-table-wrap { width: min(1400px, calc(100vw - 17rem)); } }
+.csv-table td, .csv-table th { white-space: nowrap; }
+.csv-table td:nth-last-child(-n+3), .csv-table td:nth-last-child(-n+3) { white-space: normal; min-width: 16rem; }
+.csv-table td:last-child { min-width: 9rem; white-space: nowrap; }

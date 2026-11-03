@@ -1,0 +1,36 @@
+name: Build
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+# Rebuilds docs/ and checks links. GitHub Pages keeps serving the master
+# branch /docs folder; this workflow does not deploy and does not change
+# that setting.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+          cache-dependency-path: sites/crossfire-pro/go.sum
+
+      - name: Install Hugo extended 0.165.0
+        run: |
+          curl -fsSL -o /tmp/hugo.tar.gz \
+            https://github.com/gohugoio/hugo/releases/download/v0.165.0/hugo_extended_0.165.0_linux-amd64.tar.gz
+          sudo tar -C /usr/local/bin -xzf /tmp/hugo.tar.gz hugo
+          hugo version
+
+      - name: Rebuild docs
+        run: ./scripts/build.sh
+
+      - name: Committed docs match the rebuild
+        run: git diff --exit-code
+
+      - name: Check links
+        run: python3 scripts/check_links.py
