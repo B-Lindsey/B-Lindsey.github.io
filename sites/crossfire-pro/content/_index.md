@@ -47,8 +47,9 @@ lastmod: 2026-10-30T18:30:00-07:00
 7. [Kerf width and hole/part accuracy]({{< relref "/procedures/08-kerf-and-hole-accuracy.md" >}})
 8. [SheetCAM 8.0 setup for FireControl]({{< relref "/procedures/09-sheetcam-setup.md" >}})
 9. [Squaring the gantry and fixing lost steps]({{< relref "/procedures/10-gantry-squaring-and-lost-steps.md" >}})
-10. [Test-cut program: checking the starting settings]({{< relref "/testing/test-cut-program.md" >}}), with a [printable worksheet]({{< relref "/testing/test-cut-worksheet.md" >}}). The order is: a speed ladder, then a 3-way THC voltage test (SMART voltage vs. the Razorweld chart's voltage vs. the T45m-format chart's voltage), then pierce delays. An optional session (S04B) compares the two charts head to head on 3/16 in mild steel.
-11. [Indexing parts longer than the table]({{< relref "/procedures/01-indexing-long-parts.md" >}}). Compiled research, kept for reference and listed last, since my parts fit within the PRO’s roughly 33 in of Y travel.
+10. [Water table chemistry and maintenance]({{< relref "/procedures/11-water-table-chemistry.md" >}}). My cheap KOH routine, what the blue/green additives cost, the aluminum/hydrogen steps, pH checks, and San Diego dump/refill.
+11. [Test-cut program: checking the starting settings]({{< relref "/testing/test-cut-program.md" >}}), with a [printable worksheet]({{< relref "/testing/test-cut-worksheet.md" >}}). The order is: a speed ladder, then a 3-way THC voltage test (SMART voltage vs. the Razorweld chart's voltage vs. the T45m-format chart's voltage), then pierce delays. An optional session (S04B) compares the two charts head to head on 3/16 in mild steel.
+12. [Indexing parts longer than the table]({{< relref "/procedures/01-indexing-long-parts.md" >}}). Compiled research, kept for reference and listed last, since my parts fit within the PRO’s roughly 33 in of Y travel.
 
 ### FireControl
 
