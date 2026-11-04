@@ -1,7 +1,7 @@
 ---
 title: "Sources"
 date: 2026-10-28
-lastmod: 2026-10-30T18:30:00-07:00
+lastmod: 2026-11-03T20:40:00-08:00
 draft: false
 ---
 
@@ -45,7 +45,7 @@ The Razorcut 45 DI manual and the J45XC torch diagram are Razorweld PDFs; local 
 
 <https://www.langmuirsystems.com/pages/crossfire-assembly>
 
-**Cited on:** [Work Clamp, Grounding, and Electrical Noise (EMI)]({{< relref "/procedures/03-grounding-and-emi.md" >}})
+**Cited on:** [Work Clamp, Grounding, and Electrical Noise (EMI)]({{< relref "/procedures/03-grounding-and-emi.md" >}}), [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
 
 
 ***
@@ -80,7 +80,7 @@ The Razorcut 45 DI manual and the J45XC torch diagram are Razorweld PDFs; local 
 
 <https://www.langmuirsystems.com/pages/firecontrol-guide>
 
-**Cited on:** [FireControl Straight Cut: Starting a Cut at the Plate Edge]({{< relref "/firecontrol/fc-01-straight-cut-edge-start.md" >}}), [Indexing Parts Longer Than the Table]({{< relref "/procedures/01-indexing-long-parts.md" >}}), [Work Clamp, Grounding, and Electrical Noise (EMI)]({{< relref "/procedures/03-grounding-and-emi.md" >}}), [SheetCAM 8.0 Setup for FireControl (Post v1.6)]({{< relref "/procedures/09-sheetcam-setup.md" >}})
+**Cited on:** [FireControl Straight Cut: Starting a Cut at the Plate Edge]({{< relref "/firecontrol/fc-01-straight-cut-edge-start.md" >}}), [Indexing Parts Longer Than the Table]({{< relref "/procedures/01-indexing-long-parts.md" >}}), [Work Clamp, Grounding, and Electrical Noise (EMI)]({{< relref "/procedures/03-grounding-and-emi.md" >}}), [SheetCAM 8.0 Setup for FireControl (Post v1.6)]({{< relref "/procedures/09-sheetcam-setup.md" >}}), [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
 
 
 ***
@@ -94,7 +94,7 @@ The Razorcut 45 DI manual and the J45XC torch diagram are Razorweld PDFs; local 
 
 <https://www.langmuirsystems.com/pages/pro-assembly>
 
-**Cited on:** [Indexing Parts Longer Than the Table]({{< relref "/procedures/01-indexing-long-parts.md" >}}), [THC Setup, Tuning, and Stopping Torch Dives]({{< relref "/procedures/02-thc-setup-and-diving.md" >}}), [Work Clamp, Grounding, and Electrical Noise (EMI)]({{< relref "/procedures/03-grounding-and-emi.md" >}}), [Air Supply, Air Quality, and X45 Consumables]({{< relref "/procedures/04-air-quality-and-consumables.md" >}}), [Getting Rid of Dross and Bevel]({{< relref "/procedures/06-dross-and-bevel.md" >}}), [Squaring the Gantry and Fixing Lost Steps]({{< relref "/procedures/10-gantry-squaring-and-lost-steps.md" >}})
+**Cited on:** [Indexing Parts Longer Than the Table]({{< relref "/procedures/01-indexing-long-parts.md" >}}), [THC Setup, Tuning, and Stopping Torch Dives]({{< relref "/procedures/02-thc-setup-and-diving.md" >}}), [Work Clamp, Grounding, and Electrical Noise (EMI)]({{< relref "/procedures/03-grounding-and-emi.md" >}}), [Air Supply, Air Quality, and X45 Consumables]({{< relref "/procedures/04-air-quality-and-consumables.md" >}}), [Getting Rid of Dross and Bevel]({{< relref "/procedures/06-dross-and-bevel.md" >}}), [Squaring the Gantry and Fixing Lost Steps]({{< relref "/procedures/10-gantry-squaring-and-lost-steps.md" >}}), [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
 
 
 ***
@@ -207,6 +207,14 @@ The Razorcut 45 DI manual and the J45XC torch diagram are Razorweld PDFs; local 
 <https://www.langmuirsystems.com/products/razorweld-x45-machine-torch>
 
 **Cited on:** [Air Supply, Air Quality, and X45 Consumables]({{< relref "/procedures/04-air-quality-and-consumables.md" >}})
+
+
+***
+
+
+<https://www.langmuirsystems.com/products/water-table>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
 
 
 ***
@@ -390,7 +398,7 @@ These forum links come from research done with an AI research assistant, mostly 
 
 <https://forum.langmuirsystems.com/t/10443>
 
-**Cited on:** [Air Supply, Air Quality, and X45 Consumables]({{< relref "/procedures/04-air-quality-and-consumables.md" >}})
+**Cited on:** [Air Supply, Air Quality, and X45 Consumables]({{< relref "/procedures/04-air-quality-and-consumables.md" >}}), [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
 
 
 
@@ -901,6 +909,223 @@ These forum links come from research done with an AI research assistant, mostly 
 
 ***
 
+<https://forum.langmuirsystems.com/t/596>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/23574>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/25422>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/32823>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/29989>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/13505>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/36889>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/12797>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/19486>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/9176>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/2972>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/2725>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/36518>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/20034>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/47725>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/15924>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/38248>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/43655>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/41806>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/45698>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/34932>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/8276>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/24652>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/35059>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/42405>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/43938>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/25263>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/5656>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/20264>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/1060>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://forum.langmuirsystems.com/t/7168>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
 
 ## Other
 
@@ -937,6 +1162,167 @@ Langmuir's mirror of the Razorcut 45 DI manual (a related but different model).
 <https://www.youtube.com/watch?v=xCbOJz-zfl8>
 
 **Cited on:** [Getting Rid of Dross and Bevel]({{< relref "/procedures/06-dross-and-bevel.md" >}}), [Squaring the Gantry and Fixing Lost Steps]({{< relref "/procedures/10-gantry-squaring-and-lost-steps.md" >}}), [Test-Cut Program: Checking the Starting Settings, Coupon by Coupon]({{< relref "/testing/test-cut-program.md" >}})
+
+
+***
+
+<https://www.hypermaxonline.com/assets/images/pdfs/Powermax600%20Operator%20Manual.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://www.hypertherm.com/resources/faqs/is-it-okay-to-plasma-cut-aluminum-on-a-water-table/>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://www.manualsdir.com/manuals/772254/hypertherm-ht4001-plasma-arc-cutting-system.html?page=235>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://esab.com/us/nam_en/esab-university/blogs/can-you-plasma-cut-aluminum-on-a-water-table/>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://torchmate.com/uploads/images/PDFs/SafetyNotice.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://alfed.org.uk/wp-content/uploads/2023/10/Aluminium-Corrosion.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://www.cuttingfluidsdirect.com/products/sterlingcool-plasmacut-premium-plasma-cutting-fluid-5-gallon-pail>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://www.plasmatech.co.uk/pdf/SterlingCool-PlasmaCutTDS.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://konzenchemical.com/products/plasma-green-9010-5-gallon-pail>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://www.lubecorp.com/wp-content/uploads/GreenCut-Plasma-SDS-150707.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://www.lubecorp.com/wp-content/uploads/GreenCut-Plasma_Frequently-Asked-Questions-160804.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://www.fishersci.com/shop/products/potassium-hydroxide-flake-85-thermo-scientific/AAA1619936>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://webstore.ansi.org/preview-pages/NACE/preview_NACE+SP0403-2008.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://repository.gatech.edu/server/api/core/bitstreams/65987bfd-7884-49b2-92fa-eccdac3f66a0/content>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://blaulain.com/wp-content/uploads/2022/12/Autotrol_Performa_UF_269_Logix_869_en.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://www.sandiego.gov/sites/default/files/2026-06/pud-annual-drinking-water-quality-report-2025.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://www.sandiego.gov/sites/default/files/2026-06/additional-characteristics.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://docs.sandiego.gov/municode/MunicodeChapter04/Ch04Art03Division03.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://www.sandiego.gov/sites/default/files/2025-04/minimum-best-mgmt-practices.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://docs.sandiego.gov/municode/MuniCodeChapter06/Ch06Art04Division05.pdf>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://www.sandiego.gov/environmental-services/ep/hazardous>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://dtsc.ca.gov/corrosive-wastes/>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
+
+
+***
+
+<https://cncplasmainfo.com/watertreatement.html>
+
+**Cited on:** [Water Table Chemistry and Maintenance (KOH Routine)]({{< relref "/procedures/11-water-table-chemistry.md" >}})
 
 
 ***
